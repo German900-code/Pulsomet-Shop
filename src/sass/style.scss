@@ -1,0 +1,30 @@
+@import '../sass/base/_variables.sass';
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+@import '../sass/blocks/promo';
+@import '../sass/blocks/header';
+@import '../sass/blocks/button';
+@import '../sass/blocks/advantages';
+@import '../sass/blocks/consultation';
+@import '../sass/blocks/title';
+@import '../sass/blocks/forms';
+@import '../sass/blocks/carousel';
+@import '../sass/blocks/catalog';
