@@ -1,7 +1,9 @@
 @import '../sass/base/_variables.sass';
+@import '../sass/base/animations';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
+    box-sizing: border-box;
 }
 
 html,
@@ -28,3 +30,7 @@ body {
 @import '../sass/blocks/forms';
 @import '../sass/blocks/carousel';
 @import '../sass/blocks/catalog';
+@import '../sass/blocks/reviews';
+@import '../sass/blocks/footer';
+@import '../sass/blocks/modal';
+@import '../sass/blocks/pageup';

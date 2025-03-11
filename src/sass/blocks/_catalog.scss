@@ -24,6 +24,8 @@
         margin: 0 5px;
         cursor: pointer;
         transition: 0.5s all;
+        max-width: 100%;
+
 
         &:hover {
             box-shadow: 3px 3px 20px #C70101;
@@ -32,6 +34,20 @@
 
         div {
             transform: skew(25deg);
+
+            @media screen and (max-width: 768px) {
+                overflow-wrap: break-word;
+                word-break: break-word;
+                // /* Запрещает выход за границы родителя */
+                padding: 10px;
+                text-align: center;
+                /* Выравнивание текста */
+                white-space: nowrap;
+                /* Запрещает перенос строк */
+                overflow: hidden;
+                /* Скрывает выходящий текст */
+                text-overflow: ellipsis;
+            }
         }
 
         &_active {
@@ -49,6 +65,16 @@
 
         &_active {
             display: flex;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 576px) {
+            display: flex;
+            justify-content: center;
         }
     }
 
@@ -148,7 +174,7 @@
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
-            padding-left: 19px;
+            padding-left: 0;
             margin-bottom: 0;
             list-style-type: none;
 
@@ -163,7 +189,7 @@
                 font-size: 14px;
                 font-weight: 300;
                 margin-bottom: 20px;
-                padding-left: 20px;
+                padding-left: 5px;
 
                 &:before {
                     content: '';
@@ -171,8 +197,8 @@
                     width: 5px;
                     height: 5px;
                     background-color: #C70101;
-                    left: -14px;
-                    top: 7px;
+                    left: -13px;
+                    top: 6px;
                 }
             }
         }

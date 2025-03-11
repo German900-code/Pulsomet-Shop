@@ -43,4 +43,14 @@
         flex: 1;
         text-align: center;
     }
+
+    &__icons {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }

@@ -10,6 +10,11 @@
     font-weight: 400;
     text-transform: uppercase;
 
+    &:hover {
+        background-color: green;
+        cursor: pointer;
+    }
+
     &_main {
         margin-top: 67px;
         width: 300px;
@@ -29,5 +34,6 @@
         height: 40px;
         font-size: 14px;
         background-color: #C70101;
+
     }
 }
